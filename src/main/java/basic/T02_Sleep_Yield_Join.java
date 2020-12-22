@@ -2,15 +2,15 @@ package basic;
 
 /**
  * @Description:
- * Thread.yield 从运行状态到就绪状态，让出CPU，但是还是会参与争抢；不会释放锁
- * Join：主线程加入thread1.join 主线程等待thread1执行完，
+ *  Thread.yield 从运行状态到就绪状态，让出CPU，但是还是会参与争抢；不会释放锁
+ *  Join：主线程加入thread1.join 主线程等待thread1执行完，
  *      如果thread1和thread2争抢锁，主线程中调用thread1.join，不会释放thread1的锁；
  *      如果thread1和主线程争抢锁，主线程中调用thread1.join，会释放thread1的锁，但主线程得到锁后join thread1时会造成死锁；
- * Sleep ：不会释放锁！！！！
+ *  Sleep ：不会释放锁！！！！
  * @Date: 2020/12/22
  * @Auther: luoyan
  */
-public class T03_Sleep_Yield_Join {
+public class T02_Sleep_Yield_Join {
 
     public static Object o = new Object();
 
